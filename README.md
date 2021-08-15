@@ -76,19 +76,19 @@ In your local [Plutus] checkout,
 3. go to `http://localhost:8009` to visit your local Plutus playground.
 
 ## Resources
-[Plutus Official Docs]
+[Plutus Official Docs] - start from here
 
-[Plutus Community Docs]
+[Plutus Community Docs] - amazing community docs. If you have trouble setting up your dev env, whatever your system is, be sure to look here first.
 
 [Plutus Code Repo]
 
 [Online Plutus Playground]
 
-[Plutus Pioneer Program videos]
+[Plutus Pioneer Program videos] - comprehensive intro to Plutus
 
 [Plutus Pioneer Program Code]
 
-[Plutus Starter Project Template]
+[Plutus Starter Project Template] - start a new project from here
 
 [Haskell IDE Setup repo]: https://github.com/bjing/haskell-ide-setup
 [Nix website]: https://nixos.org/download.html#nix-quick-install
