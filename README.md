@@ -1,14 +1,18 @@
 # Start Developing on Plutus
-## Development Environemnt
-Setting up your development environment for [Plutus] takes a bit of time. Cardano offers a [Plutus starter project template] to get you started quickly.
+Plutus is a smart contract platform that allows you to develop dApps on the Cardano blockchain.
 
-You may also want to run the Plutus Playground locally to test your contracts, to do that, you'll need:
-- matching Plutus versions
+Setting up your development environment for Plutus takes a bit of time. Follow instructions in the [Plutus Starter Project Template] to set it up.
+
+In this repo, I only include things that aren't obvious from the official Plutus documentation. There are also quick reference links at the end of the README.
+
+## Local Plutus Playground
+Plutus offers an online playground for you to test your smart contracts, however you may want to run the Plutus Playground locally. To do that, you'll need:
+- matching Plutus version
 - Nix shell
 - plutus playground server
 
 ### Matching Plutus Version
-If you are using the [Plutus project template], you need to make sure the Plutus repo hash specified in your project's `project.cabal` matches your local Plutus repo checkout.
+You need to make sure the Plutus repo hash specified in your project's `project.cabal` matches your local Plutus repo checkout.
 
 For example, if you have this in your project.cabal,
 ```cabal
@@ -57,14 +61,15 @@ In your local [Plutus] checkout,
 [Plutus Pioneer Program videos]
 
 [Plutus Pioneer Program Code]
-[Plutus starter project template]
+
+[Plutus Starter Project Template]
 
 
 [Nix website]: https://nixos.org/download.html#nix-quick-install
 [Online Plutus Playground]: https://playground.plutus.iohkdev.io/
 [Plutus]: https://github.com/input-output-hk/plutus
 [Plutus Code Repo]: https://github.com/input-output-hk/plutus
-[Plutus Official Docs]: https://testnets.cardano.org/en/programming-languages/plutus/overview/
-[Plutus starter project template]: https://github.com/input-output-hk/plutus-starter
+[Plutus Official Docs]: https://plutus.readthedocs.io/en/latest/
+[Plutus Starter Project Template]: https://github.com/input-output-hk/plutus-starter
 [Plutus Pioneer Program Code]: https://github.com/input-output-hk/plutus-pioneer-program
 [Plutus Pioneer Program videos]: https://youtu.be/wqC8oiurqsI?list=PLnPTB0CuBOBypVDf1oGcsvnJGJg8h-LII
