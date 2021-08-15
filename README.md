@@ -13,7 +13,7 @@ The quickest way to get started is to follow these instructions to install GHC: 
 
 Or if you are a Stack user like me,
 
-* install Stack, on OSX, 
+* install Stack, on OSX,
   ```
   brew install haskell-stack
   ```
@@ -75,6 +75,25 @@ In your local [Plutus] checkout,
     ```
 3. go to `http://localhost:8009` to visit your local Plutus playground.
 
+## Q&A
+If you have trouble downloading `purty` while building Plutus on OSX, and are getting something like this:
+```
+curl: (22) The requested URL returned error: 403 Forbidden
+error: cannot download download_file?file_path=purty-6.2.0-osx.tar.gz from any mirror
+```
+do the following:
+```sh
+sudo mkdir /etc/nix
+sudo touch /etc/nix/nix.conf
+```
+and put the following two lines in the file you just created:
+```
+substituters        = https://hydra.iohk.io https://iohk.cachix.org https://cache.nixos.org/
+trusted-public-keys = hydra.iohk.io:f/Ea+s+dFdN+3Y/G+FDgSq+a5NEWhJGzdjvKNGv0/EQ= iohk.cachix.org-1:DpRUyj7h7V830dp/i6Nti+NEO2/nhblbov/8MW7Rqoo= cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=
+```
+I suggest doing this before you start the build. It will make your life much easier.
+
+
 ## Resources
 [Plutus Official Docs] - start from here
 
@@ -89,6 +108,8 @@ In your local [Plutus] checkout,
 [Plutus Pioneer Program Code]
 
 [Plutus Starter Project Template] - start a new project from here
+
+
 
 [Haskell IDE Setup repo]: https://github.com/bjing/haskell-ide-setup
 [Nix website]: https://nixos.org/download.html#nix-quick-install
