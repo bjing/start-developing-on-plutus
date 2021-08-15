@@ -5,6 +5,28 @@ Setting up your development environment for Plutus takes a bit of time. Follow i
 
 In this repo, I only include things that aren't obvious from the official Plutus documentation. There are also quick reference links at the end of the README.
 
+## Haskell Development Environment
+### GHC
+The [Plutus Starter Project Template] uses Cabal and relies on a global GHC setup. As a Haskell Stack user, I really don't like having global compiler/tool installations. They quickly get out of date and can causes issues if your various projects use different versions of GHC. Use the following instruction to set up GHC unless your project uses Stack.
+
+The quickest way to get started is to follow these instructions to install GHC: https://www.haskell.org/ghcup/
+
+Or if you are a Stack user like me,
+
+* install Stack, on OSX, 
+  ```
+  brew install haskell-stack
+  ```
+* install ghc
+  ```sh
+  stack install ghc
+  ```
+* Put `~/.stack/programs/x86_64-osx/ghc-<your-version>/bin/` into your shell's `$PATH`, so that GHC can be found when you do `cabal install` in your Cabal project. If you are unsure of your compiler path, run `stack path | grep compiler-exe` to find out.
+
+
+### IDE Setup
+Refer to my [Haskell IDE Setup repo] for instructions on various editors/IDEs, including VSCode, VIM, Spacemacs and Atom (no longer updated).
+
 ## Local Plutus Playground
 Plutus offers an online playground for you to test your smart contracts, however you may want to run the Plutus Playground locally. To do that, you'll need:
 - matching Plutus version
@@ -68,7 +90,7 @@ In your local [Plutus] checkout,
 
 [Plutus Starter Project Template]
 
-
+[Haskell IDE Setup repo]: https://github.com/bjing/haskell-ide-setup
 [Nix website]: https://nixos.org/download.html#nix-quick-install
 [Online Plutus Playground]: https://playground.plutus.iohkdev.io/
 [Plutus]: https://github.com/input-output-hk/plutus
