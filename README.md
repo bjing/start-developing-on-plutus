@@ -29,25 +29,27 @@ make sure `tag` matches your local Plutus's git hash (use `git log -n1` to check
 ### Install Nix on OSX
 On [Nix website], it suggests this command to install NIX:
 ```sh
-$ curl -L https://nixos.org/nix/install | sh
+curl -L https://nixos.org/nix/install | sh
 ```
 However, this won't work if you are on the latest OSX version. Use the following instead:
 
 ```sh
-$ sh <(curl -L https://nixos.org/nix/install) --darwin-use-unencrypted-nix-store-volume
+sh <(curl -L https://nixos.org/nix/install) --darwin-use-unencrypted-nix-store-volume
 ```
 
 ### Plutus Playground Server
 In your local [Plutus] checkout,
-1. start nix shell. If this is your first time running nix-shell, give it some time to pull down and install dependencies. This can take quite a while.
+1. start a nix shell. If this is your first time running nix-shell, give it some time to pull down and install dependencies. This can take quite a while.
     ```sh
-    $ nix-shell
+    nix-shell
     ```
-2. go to subfolder `plutus-playground-client`, run
+   and run:
     ```sh
-    $ plutus-playground-server
-
-    $ npm start
+    cd plutus-playground-client && plutus-playground-server
+    ```
+2. in a new nix-shell, run:
+    ```sh
+    cd plutus-playground-client && npm start
     ```
 3. go to `http://localhost:8009` to visit your local Plutus playground.
 
