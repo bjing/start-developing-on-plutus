@@ -54,6 +54,8 @@ In your local [Plutus] checkout,
 ## Resources
 [Plutus Official Docs]
 
+[Plutus Community Docs]
+
 [Plutus Code Repo]
 
 [Online Plutus Playground]
@@ -69,6 +71,7 @@ In your local [Plutus] checkout,
 [Online Plutus Playground]: https://playground.plutus.iohkdev.io/
 [Plutus]: https://github.com/input-output-hk/plutus
 [Plutus Code Repo]: https://github.com/input-output-hk/plutus
+[Plutus Community Docs]: https://docs.plutus-community.com/
 [Plutus Official Docs]: https://plutus.readthedocs.io/en/latest/
 [Plutus Starter Project Template]: https://github.com/input-output-hk/plutus-starter
 [Plutus Pioneer Program Code]: https://github.com/input-output-hk/plutus-pioneer-program
