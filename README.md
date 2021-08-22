@@ -95,6 +95,8 @@ I suggest doing this before you start the build. It will make your life much eas
 
 
 ## Resources
+[Alonzo Testnet Exercises]
+
 [Plutus Official Docs] - start from here
 
 [Plutus Community Docs] - amazing community docs. If you have trouble setting up your dev env, whatever your system is, be sure to look here first.
@@ -111,6 +113,7 @@ I suggest doing this before you start the build. It will make your life much eas
 
 
 
+[Alonzo Testnet Exercises]: https://github.com/input-output-hk/Alonzo-testnet/tree/main/Alonzo-exercises/alonzo-purple
 [Haskell IDE Setup repo]: https://github.com/bjing/haskell-ide-setup
 [Nix website]: https://nixos.org/download.html#nix-quick-install
 [Online Plutus Playground]: https://playground.plutus.iohkdev.io/
