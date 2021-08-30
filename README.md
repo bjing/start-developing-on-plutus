@@ -67,7 +67,7 @@ In your local [Plutus] checkout,
     ```
    and run:
     ```sh
-    cd plutus-playground-client && plutus-playground-server
+    cd plutus-playground-server && plutus-playground-server
     ```
 2. in a new nix-shell, run:
     ```sh
