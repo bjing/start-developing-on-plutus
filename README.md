@@ -9,6 +9,7 @@ In this repo, I only include things that aren't obvious from the official Plutus
 ### GHC
 The [Plutus Starter Project Template] uses Cabal and relies on a global GHC setup. As a Haskell Stack user, I really don't like having global compiler/tool installations. They quickly get out of date and can causes issues if your various projects use different versions of GHC. Use the following instruction to set up GHC unless your project uses Stack.
 
+#### GHCUP
 The quickest way to get started is to follow these instructions to install GHC: https://www.haskell.org/ghcup/
 Install ghcup:
 ```
@@ -20,7 +21,7 @@ ghcup install ghc 8.10.7
 ghcup set ghc 8.10.7
 ```
 
-
+#### Stack
 Or if you are a Stack user like me,
 
 * install Stack, on OSX,
