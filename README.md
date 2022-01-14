@@ -129,7 +129,9 @@ I suggest doing this before you start the build. It will make your life much eas
 
 [Plutus Community Docs] - amazing community docs. If you have trouble setting up your dev env, whatever your system is, be sure to look here first.
 
-[Plutus Code Repo]
+[Plutus Core]
+
+[plutus-apps]
 
 [Online Plutus Playground]
 
@@ -139,6 +141,9 @@ I suggest doing this before you start the build. It will make your life much eas
 
 [Plutus Starter Project Template] - start a new project from here
 
+Learn You a Haskell for Great Good: [original](http://learnyouahaskell.com/), [remastered](https://hansruec.github.io/learn-you-a-haskell-remastered/01-first-things-first.html) and [interactive notebook](https://hub.gke2.mybinder.org/user/jamesdbrock-lea-askell-notebook-24dgdx7w/lab/tree/learn_you_a_haskell/00-preface.ipynb)
+
+[Haskell & Cryptocurrencies course Mongolia]
 
 
 [Alonzo Testnet Exercises]: https://github.com/input-output-hk/Alonzo-testnet/tree/main/Alonzo-exercises/alonzo-purple
@@ -147,9 +152,10 @@ I suggest doing this before you start the build. It will make your life much eas
 [Nix website]: https://nixos.org/download.html#nix-quick-install
 [Online Plutus Playground]: https://playground.plutus.iohkdev.io/
 [plutus-apps]: https://github.com/input-output-hk/plutus-apps
-[Plutus Code Repo]: https://github.com/input-output-hk/plutus
+[Plutus Core]: https://github.com/input-output-hk/plutus
 [Plutus Community Docs]: https://docs.plutus-community.com/
 [Plutus Official Docs]: https://plutus.readthedocs.io/en/latest/
 [Plutus Starter Project Template]: https://github.com/input-output-hk/plutus-starter
 [Plutus Pioneer Program Code]: https://github.com/input-output-hk/plutus-pioneer-program
 [Plutus Pioneer Program videos]: https://youtu.be/wqC8oiurqsI?list=PLnPTB0CuBOBypVDf1oGcsvnJGJg8h-LII
+[Haskell & Cryptocurrencies course Mongolia]: https://www.youtube.com/playlist?list=PLJ3w5xyG4JWmBVIigNBytJhvSSfZZzfTm
