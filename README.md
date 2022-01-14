@@ -38,6 +38,7 @@ Or if you are a Stack user like me,
 ### IDE Setup
 Refer to my [Haskell IDE Setup repo] for instructions on various editors/IDEs, including VSCode, VIM, Spacemacs and Atom (no longer updated).
 
+
 ## Local Plutus Playground
 Plutus offers an online playground for you to test your smart contracts, however you may want to run the Plutus Playground locally. To do that, you'll need:
 - matching Plutus version
@@ -45,22 +46,22 @@ Plutus offers an online playground for you to test your smart contracts, however
 - plutus playground server
 
 ### Matching Plutus Version
-You need to make sure the Plutus repo hash specified in your project's `project.cabal` matches your local Plutus repo checkout.
+You need to make sure the `plutus-apps` repo hash specified in your project's `project.cabal` matches your local [plutus-apps] repo checkout.
 
 For example, if you have this in your project.cabal,
 ```cabal
 source-repository-package
   type: git
-  location: https://github.com/input-output-hk/plutus.git
+  location: https://github.com/input-output-hk/plutus-apps.git
   subdir:
     ...
     ...
   tag: ea0ca4e9f9821a9dbfc5255fa0f42b6f2b3887c4
 ```
-make sure `tag` matches your local Plutus's git hash (use `git log -n1` to check). If they don't match, simply go to your Plutus repo and `git checkout <hash>`.
+make sure `tag` matches your local [plutus-apps]'s git hash (use `git log -n1` to check). If they don't match, simply go to your [plutus-apps] repo and do `git checkout <hash>`.
 
 ### Install Nix on OSX
-On [Nix website], it suggests this command to install NIX:
+On [Nix website], it suggests this command to install Nix:
 ```sh
 curl -L https://nixos.org/nix/install | sh
 ```
@@ -70,21 +71,35 @@ However, this won't work if you are on the latest OSX version. Use the following
 sh <(curl -L https://nixos.org/nix/install) --darwin-use-unencrypted-nix-store-volume
 ```
 
-### Plutus Playground Server
-In your local [Plutus] checkout,
+### Plutus Playground
+Before running any of the following commands, make sure you've set up [IOHK's binary cache](https://github.com/input-output-hk/plutus#iohk-binary-cache).
+
+In your local [plutus-apps] checkout,
 1. start a nix shell. If this is your first time running nix-shell, give it some time to pull down and install dependencies. This can take quite a while.
     ```sh
     nix-shell
     ```
    and run:
     ```sh
-    cd plutus-playground-server && plutus-playground-server
+    cd plutus-playground-client && plutus-playground-server
     ```
 2. in a new nix-shell, run:
     ```sh
     cd plutus-playground-client && npm start
     ```
 3. go to `http://localhost:8009` to visit your local Plutus playground.
+
+
+## Local Plutus Docs
+In your local [plutus-apps] checkout, enter a `nix-shell`, then run:
+```
+build-and-serve-docs
+```
+
+then view 
+* general Pluts and Marlowe docs at http://localhost:8002/,
+* Plutus API docs at http://localhost:8002/haddock
+
 
 ## Q&A
 If you have trouble downloading `purty` while building Plutus on OSX, and are getting something like this:
@@ -131,7 +146,7 @@ I suggest doing this before you start the build. It will make your life much eas
 [Haskell IDE Setup repo]: https://github.com/bjing/haskell-ide-setup
 [Nix website]: https://nixos.org/download.html#nix-quick-install
 [Online Plutus Playground]: https://playground.plutus.iohkdev.io/
-[Plutus]: https://github.com/input-output-hk/plutus
+[plutus-apps]: https://github.com/input-output-hk/plutus-apps
 [Plutus Code Repo]: https://github.com/input-output-hk/plutus
 [Plutus Community Docs]: https://docs.plutus-community.com/
 [Plutus Official Docs]: https://plutus.readthedocs.io/en/latest/
