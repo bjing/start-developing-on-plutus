@@ -153,8 +153,7 @@ Learn You a Haskell for Great Good: [original](http://learnyouahaskell.com/), [r
 [Online Plutus Playground]: https://playground.plutus.iohkdev.io/
 [plutus-apps]: https://github.com/input-output-hk/plutus-apps
 [Plutus Core]: https://github.com/input-output-hk/plutus
-[Plutus Community Docs]: https://docs.plutus-community.com/
-[Plutus Official Docs]: https://plutus.readthedocs.io/en/latest/
+[Plutus Community Docs]: https://plutus-community.readthedocs.io/en/latest/
 [Plutus Starter Project Template]: https://github.com/input-output-hk/plutus-starter
 [Plutus Pioneer Program Code]: https://github.com/input-output-hk/plutus-pioneer-program
 [Plutus Pioneer Program videos]: https://youtu.be/wqC8oiurqsI?list=PLnPTB0CuBOBypVDf1oGcsvnJGJg8h-LII
